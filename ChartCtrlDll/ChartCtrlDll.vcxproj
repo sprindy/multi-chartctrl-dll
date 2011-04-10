@@ -1,0 +1,192 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{D6D113ED-04E6-4B09-B2C7-E925A795A89A}</ProjectGuid>
+    <RootNamespace>ChartCtrlDll</RootNamespace>
+    <Keyword>MFCDLLProj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>MultiByte</CharacterSet>
+    <UseOfMfc>Dynamic</UseOfMfc>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+    <UseOfMfc>Dynamic</UseOfMfc>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <IncludePath>$(IncludePath)</IncludePath>
+    <LibraryPath>$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>CHARTCTRL_EXPORT;WIN32;_WINDOWS;_DEBUG;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>
+      </AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ModuleDefinitionFile>.\ChartCtrlDll.def</ModuleDefinitionFile>
+    </Link>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0409</Culture>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>CHARTCTRL_EXPORT;WIN32;_WINDOWS;NDEBUG;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <ModuleDefinitionFile>.\ChartCtrlDll.def</ModuleDefinitionFile>
+    </Link>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0409</Culture>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <None Include="bitmap1.bmp" />
+    <None Include="ChartBalloonLabel.inl" />
+    <None Include="ChartCtrlDll.def" />
+    <None Include="ChartLabel.inl" />
+    <None Include="ChartPointsArray.inl" />
+    <None Include="ChartSerieBase.inl" />
+    <None Include="ReadMe.txt" />
+    <None Include="res\ChartCtrlDll.rc2" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="ChartAxis.cpp" />
+    <ClCompile Include="ChartAxisLabel.cpp" />
+    <ClCompile Include="ChartBarSerie.cpp" />
+    <ClCompile Include="ChartCandlestickSerie.cpp" />
+    <ClCompile Include="ChartCrossHairCursor.cpp" />
+    <ClCompile Include="ChartCtrl.cpp" />
+    <ClCompile Include="ChartCtrlDll.cpp" />
+    <ClCompile Include="ChartCursor.cpp" />
+    <ClCompile Include="ChartDateTimeAxis.cpp" />
+    <ClCompile Include="ChartDragLineCursor.cpp" />
+    <ClCompile Include="ChartFont.cpp" />
+    <ClCompile Include="ChartGanttSerie.cpp" />
+    <ClCompile Include="ChartGradient.cpp" />
+    <ClCompile Include="ChartGrid.cpp" />
+    <ClCompile Include="ChartLegend.cpp" />
+    <ClCompile Include="ChartLineSerie.cpp" />
+    <ClCompile Include="ChartLogarithmicAxis.cpp" />
+    <ClCompile Include="ChartPointsSerie.cpp" />
+    <ClCompile Include="ChartScrollBar.cpp" />
+    <ClCompile Include="ChartSerie.cpp" />
+    <ClCompile Include="ChartStandardAxis.cpp" />
+    <ClCompile Include="ChartSurfaceSerie.cpp" />
+    <ClCompile Include="ChartTitle.cpp" />
+    <ClCompile Include="ChartXYSerie.cpp" />
+    <ClCompile Include="ColourPicker.cpp" />
+    <ClCompile Include="ColourPopup.cpp" />
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ChartAxis.h" />
+    <ClInclude Include="ChartAxisLabel.h" />
+    <ClInclude Include="ChartBalloonLabel.h" />
+    <ClInclude Include="ChartBarSerie.h" />
+    <ClInclude Include="ChartCandlestickSerie.h" />
+    <ClInclude Include="ChartCrossHairCursor.h" />
+    <ClInclude Include="ChartCtrl.h" />
+    <ClInclude Include="ChartCtrlDll.h" />
+    <ClInclude Include="ChartCursor.h" />
+    <ClInclude Include="ChartDateTimeAxis.h" />
+    <ClInclude Include="ChartDragLineCursor.h" />
+    <ClInclude Include="ChartFont.h" />
+    <ClInclude Include="ChartGanttSerie.h" />
+    <ClInclude Include="ChartGradient.h" />
+    <ClInclude Include="ChartGrid.h" />
+    <ClInclude Include="ChartLabel.h" />
+    <ClInclude Include="ChartLegend.h" />
+    <ClInclude Include="ChartLineSerie.h" />
+    <ClInclude Include="ChartLogarithmicAxis.h" />
+    <ClInclude Include="ChartMouseListener.h" />
+    <ClInclude Include="ChartPointsArray.h" />
+    <ClInclude Include="ChartPointsSerie.h" />
+    <ClInclude Include="ChartScrollBar.h" />
+    <ClInclude Include="ChartSerie.h" />
+    <ClInclude Include="ChartSerieBase.h" />
+    <ClInclude Include="ChartSeriesMouseListener.h" />
+    <ClInclude Include="ChartStandardAxis.h" />
+    <ClInclude Include="ChartString.h" />
+    <ClInclude Include="ChartSurfaceSerie.h" />
+    <ClInclude Include="ChartTitle.h" />
+    <ClInclude Include="ChartXYSerie.h" />
+    <ClInclude Include="ColourPicker.h" />
+    <ClInclude Include="ColourPopup.h" />
+    <ClInclude Include="PointsOrdering.h" />
+    <ClInclude Include="Resource.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="targetver.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="ChartCtrlDll.rc" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties RESOURCE_FILE="ChartCtrlDll.rc" />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

@@ -1,0 +1,314 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="ChartCtrl">
+      <UniqueIdentifier>{ee29102a-8080-4a4b-9b74-6523a8c58d64}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ColourPicker">
+      <UniqueIdentifier>{8a09c936-0870-4fcc-8d3b-33249d6a0283}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ChartCtrl\轴 Axis">
+      <UniqueIdentifier>{4d2e5212-abf7-4914-b362-bca44735738e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ChartCtrl\标签 Label">
+      <UniqueIdentifier>{a3f0b808-913c-444d-98c7-bfe3b2b164a9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ChartCtrl\光标 Cursor">
+      <UniqueIdentifier>{dce2ae92-ee20-4154-a80d-40bf0f5ba0ac}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ChartCtrl\系列分成 Series">
+      <UniqueIdentifier>{fdf89207-feeb-411f-a86d-bef4c417e286}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ChartCtrl\系列分成 Series\线 Line">
+      <UniqueIdentifier>{afd247af-62d0-48a8-8f89-44c989541343}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ChartCtrl\系列分成 Series\柱 Bar">
+      <UniqueIdentifier>{bd4af3ea-0bac-4ca8-b75e-4347fef90c57}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ChartCtrl\系列分成 Series\Candlestick">
+      <UniqueIdentifier>{2a442ce5-ed71-4346-b3b7-9c0661b2f067}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ChartCtrl\系列分成 Series\Gantt">
+      <UniqueIdentifier>{6ec3fb3b-5260-4f5e-97e1-c8ed395846c7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ChartCtrl\系列分成 Series\点 Points">
+      <UniqueIdentifier>{42aebe3e-8017-4242-9cc7-990dcf2b3750}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ChartCtrl\系列分成 Series\Base">
+      <UniqueIdentifier>{b5042705-c422-45e7-8743-b770fa8920bd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ChartCtrl\系列分成 Series\面 Surface">
+      <UniqueIdentifier>{debb3b04-5a17-4ff5-801a-fb512c0c06d5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ChartCtrl\系列分成 Series\坐标 XY">
+      <UniqueIdentifier>{100ca718-d269-409e-886d-f5ab61a582fc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ChartCtrl\消息监听 MouseListener">
+      <UniqueIdentifier>{a320ba31-bf95-465b-9da6-189ac45a830d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ChartCtrl\其他属性 Properties">
+      <UniqueIdentifier>{4c0c770d-5b04-4641-a6c5-e67c885ca5b4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ChartCtrl\其他属性 Properties\字体 Font">
+      <UniqueIdentifier>{bf9380f4-cd08-481e-8cd0-011d48f2adf7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ChartCtrl\其他属性 Properties\图例 Legend">
+      <UniqueIdentifier>{22a4a1ec-873c-4fe9-817c-b8003c010cae}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ChartCtrl\网格 Grid">
+      <UniqueIdentifier>{0a3156de-0a90-4c55-8ccd-478225eb04d9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ChartCtrl\梯度 Gradient">
+      <UniqueIdentifier>{53d6225c-bfc2-473e-8931-95b700c879ba}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ChartCtrl\点数组 PointsArray">
+      <UniqueIdentifier>{d17301b4-c8f5-43fc-9a73-90ec9ffdd74f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ChartCtrl\其他属性 Properties\滚动条 ScrollBar">
+      <UniqueIdentifier>{b1acf87a-edbf-4c90-b516-b30bb8bd062a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ChartCtrl\其他属性 Properties\字符串 String">
+      <UniqueIdentifier>{444097ed-8554-47c9-89b7-3dd516dd5ec3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ChartCtrl\其他属性 Properties\标题 Title">
+      <UniqueIdentifier>{ec4e6905-24ba-4e48-9a91-fda86aef8d6c}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ReadMe.txt" />
+    <None Include="ChartCtrlDll.def">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="res\ChartCtrlDll.rc2">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="bitmap1.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="ChartBalloonLabel.inl">
+      <Filter>ChartCtrl\标签 Label</Filter>
+    </None>
+    <None Include="ChartSerieBase.inl">
+      <Filter>ChartCtrl\系列分成 Series\Base</Filter>
+    </None>
+    <None Include="ChartPointsArray.inl">
+      <Filter>ChartCtrl\点数组 PointsArray</Filter>
+    </None>
+    <None Include="ChartLabel.inl">
+      <Filter>ChartCtrl\标签 Label</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="ChartCtrlDll.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ChartCrossHairCursor.cpp">
+      <Filter>ChartCtrl\光标 Cursor</Filter>
+    </ClCompile>
+    <ClCompile Include="ChartDragLineCursor.cpp">
+      <Filter>ChartCtrl\光标 Cursor</Filter>
+    </ClCompile>
+    <ClCompile Include="ChartCursor.cpp">
+      <Filter>ChartCtrl\光标 Cursor</Filter>
+    </ClCompile>
+    <ClCompile Include="ChartAxisLabel.cpp">
+      <Filter>ChartCtrl\标签 Label</Filter>
+    </ClCompile>
+    <ClCompile Include="ChartGradient.cpp">
+      <Filter>ChartCtrl\梯度 Gradient</Filter>
+    </ClCompile>
+    <ClCompile Include="ChartSerie.cpp">
+      <Filter>ChartCtrl\系列分成 Series\Base</Filter>
+    </ClCompile>
+    <ClCompile Include="ChartBarSerie.cpp">
+      <Filter>ChartCtrl\系列分成 Series\柱 Bar</Filter>
+    </ClCompile>
+    <ClCompile Include="ChartCandlestickSerie.cpp">
+      <Filter>ChartCtrl\系列分成 Series\Candlestick</Filter>
+    </ClCompile>
+    <ClCompile Include="ChartGanttSerie.cpp">
+      <Filter>ChartCtrl\系列分成 Series\Gantt</Filter>
+    </ClCompile>
+    <ClCompile Include="ChartLineSerie.cpp">
+      <Filter>ChartCtrl\系列分成 Series\线 Line</Filter>
+    </ClCompile>
+    <ClCompile Include="ChartXYSerie.cpp">
+      <Filter>ChartCtrl\系列分成 Series\坐标 XY</Filter>
+    </ClCompile>
+    <ClCompile Include="ChartPointsSerie.cpp">
+      <Filter>ChartCtrl\系列分成 Series\点 Points</Filter>
+    </ClCompile>
+    <ClCompile Include="ChartSurfaceSerie.cpp">
+      <Filter>ChartCtrl\系列分成 Series\面 Surface</Filter>
+    </ClCompile>
+    <ClCompile Include="ChartAxis.cpp">
+      <Filter>ChartCtrl\轴 Axis</Filter>
+    </ClCompile>
+    <ClCompile Include="ChartDateTimeAxis.cpp">
+      <Filter>ChartCtrl\轴 Axis</Filter>
+    </ClCompile>
+    <ClCompile Include="ChartFont.cpp">
+      <Filter>ChartCtrl\其他属性 Properties\字体 Font</Filter>
+    </ClCompile>
+    <ClCompile Include="ChartGrid.cpp">
+      <Filter>ChartCtrl\网格 Grid</Filter>
+    </ClCompile>
+    <ClCompile Include="ChartLegend.cpp">
+      <Filter>ChartCtrl\其他属性 Properties\图例 Legend</Filter>
+    </ClCompile>
+    <ClCompile Include="ChartLogarithmicAxis.cpp">
+      <Filter>ChartCtrl\轴 Axis</Filter>
+    </ClCompile>
+    <ClCompile Include="ChartStandardAxis.cpp">
+      <Filter>ChartCtrl\轴 Axis</Filter>
+    </ClCompile>
+    <ClCompile Include="ChartScrollBar.cpp">
+      <Filter>ChartCtrl\其他属性 Properties\滚动条 ScrollBar</Filter>
+    </ClCompile>
+    <ClCompile Include="ChartTitle.cpp">
+      <Filter>ChartCtrl\其他属性 Properties\标题 Title</Filter>
+    </ClCompile>
+    <ClCompile Include="ChartCtrl.cpp">
+      <Filter>ChartCtrl</Filter>
+    </ClCompile>
+    <ClCompile Include="ColourPicker.cpp">
+      <Filter>ColourPicker</Filter>
+    </ClCompile>
+    <ClCompile Include="ColourPopup.cpp">
+      <Filter>ColourPicker</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ChartCtrlDll.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ChartCtrl.h">
+      <Filter>ChartCtrl</Filter>
+    </ClInclude>
+    <ClInclude Include="ChartCrossHairCursor.h">
+      <Filter>ChartCtrl\光标 Cursor</Filter>
+    </ClInclude>
+    <ClInclude Include="ChartDragLineCursor.h">
+      <Filter>ChartCtrl\光标 Cursor</Filter>
+    </ClInclude>
+    <ClInclude Include="ChartCursor.h">
+      <Filter>ChartCtrl\光标 Cursor</Filter>
+    </ClInclude>
+    <ClInclude Include="ChartAxisLabel.h">
+      <Filter>ChartCtrl\标签 Label</Filter>
+    </ClInclude>
+    <ClInclude Include="ChartBalloonLabel.h">
+      <Filter>ChartCtrl\标签 Label</Filter>
+    </ClInclude>
+    <ClInclude Include="ChartGradient.h">
+      <Filter>ChartCtrl\梯度 Gradient</Filter>
+    </ClInclude>
+    <ClInclude Include="ChartSerie.h">
+      <Filter>ChartCtrl\系列分成 Series\Base</Filter>
+    </ClInclude>
+    <ClInclude Include="ChartSerieBase.h">
+      <Filter>ChartCtrl\系列分成 Series\Base</Filter>
+    </ClInclude>
+    <ClInclude Include="ChartBarSerie.h">
+      <Filter>ChartCtrl\系列分成 Series\柱 Bar</Filter>
+    </ClInclude>
+    <ClInclude Include="ChartCandlestickSerie.h">
+      <Filter>ChartCtrl\系列分成 Series\Candlestick</Filter>
+    </ClInclude>
+    <ClInclude Include="ChartGanttSerie.h">
+      <Filter>ChartCtrl\系列分成 Series\Gantt</Filter>
+    </ClInclude>
+    <ClInclude Include="ChartLineSerie.h">
+      <Filter>ChartCtrl\系列分成 Series\线 Line</Filter>
+    </ClInclude>
+    <ClInclude Include="ChartXYSerie.h">
+      <Filter>ChartCtrl\系列分成 Series\坐标 XY</Filter>
+    </ClInclude>
+    <ClInclude Include="ChartPointsSerie.h">
+      <Filter>ChartCtrl\系列分成 Series\点 Points</Filter>
+    </ClInclude>
+    <ClInclude Include="ChartSurfaceSerie.h">
+      <Filter>ChartCtrl\系列分成 Series\面 Surface</Filter>
+    </ClInclude>
+    <ClInclude Include="ChartAxis.h">
+      <Filter>ChartCtrl\轴 Axis</Filter>
+    </ClInclude>
+    <ClInclude Include="ChartDateTimeAxis.h">
+      <Filter>ChartCtrl\轴 Axis</Filter>
+    </ClInclude>
+    <ClInclude Include="ChartFont.h">
+      <Filter>ChartCtrl\其他属性 Properties\字体 Font</Filter>
+    </ClInclude>
+    <ClInclude Include="ChartPointsArray.h">
+      <Filter>ChartCtrl\点数组 PointsArray</Filter>
+    </ClInclude>
+    <ClInclude Include="PointsOrdering.h">
+      <Filter>ChartCtrl\点数组 PointsArray</Filter>
+    </ClInclude>
+    <ClInclude Include="ChartSeriesMouseListener.h">
+      <Filter>ChartCtrl\消息监听 MouseListener</Filter>
+    </ClInclude>
+    <ClInclude Include="ChartGrid.h">
+      <Filter>ChartCtrl\网格 Grid</Filter>
+    </ClInclude>
+    <ClInclude Include="ChartLabel.h">
+      <Filter>ChartCtrl\标签 Label</Filter>
+    </ClInclude>
+    <ClInclude Include="ChartLegend.h">
+      <Filter>ChartCtrl\其他属性 Properties\图例 Legend</Filter>
+    </ClInclude>
+    <ClInclude Include="ChartLogarithmicAxis.h">
+      <Filter>ChartCtrl\轴 Axis</Filter>
+    </ClInclude>
+    <ClInclude Include="ChartStandardAxis.h">
+      <Filter>ChartCtrl\轴 Axis</Filter>
+    </ClInclude>
+    <ClInclude Include="ChartString.h">
+      <Filter>ChartCtrl\其他属性 Properties\字符串 String</Filter>
+    </ClInclude>
+    <ClInclude Include="ChartMouseListener.h">
+      <Filter>ChartCtrl\消息监听 MouseListener</Filter>
+    </ClInclude>
+    <ClInclude Include="ChartScrollBar.h">
+      <Filter>ChartCtrl\其他属性 Properties\滚动条 ScrollBar</Filter>
+    </ClInclude>
+    <ClInclude Include="ChartTitle.h">
+      <Filter>ChartCtrl\其他属性 Properties\标题 Title</Filter>
+    </ClInclude>
+    <ClInclude Include="ColourPicker.h">
+      <Filter>ColourPicker</Filter>
+    </ClInclude>
+    <ClInclude Include="ColourPopup.h">
+      <Filter>ColourPicker</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="ChartCtrlDll.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>
